@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <div>
+
+        <title>Graduates Information</title>
+        </div>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+    
+
+<div class="navbar">
+    <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#schedule">Event Schedule</a></li>
+    <li><button id="theme-button">Toggle Dark Mode</button></li>
+    </ul>
+</div>
+        
+        <div class="header-container"> 
+        <h1>Graduates Information</h1>
+        <h2>Share Your STORY!!</h2>
+        <div id="header-button">
+        <button type="button">Choose Year</button>
+        <button type="button">Choose School</button>
+        </div>
+        </div>
+        
+        <div id="header-item">
+        <section id="about"></section>
+        <h2>About the Page</h2>
+        <p>Welcome to the <strong> School District’s Graduates & Alumni Portal</strong>! 🎓This site was created to celebrate the achievements of our students and to keep our community connected across generations.</p>
+        <p>Here, families, friends, and future graduates can explore information about each graduating class by <strong>year</strong> and <strong>school</strong>. Discover details such as a student’s name, class rank, academic honors, chosen college, intended major, and a personal “About Me” section that shares their story.</p>
+        <p>We also highlight the journeys of our alumni, showing where they are now and how they continue to make us proud. This platform is more than a record of graduates—it’s a space for inspiration, celebration, and connection across our district.</p>
+        </div>
+       
+        
+        <h2>This year's event schedule</h2>
+        <section id="schedule"></section>
+        <div id="header-item">
+        <img alt="A picture of graduates throwing their caps" src="grad image project.jpeg"/>
+       </div>
+        <h3>Can't wait !! </h3>
+        <p>It's everyone's dream to throw their caps up high on their special day!!!</p>
+        <div id="header-item">
+        <img alt="A simple picture with some books, a grad cap and diploma" src="grad image 2.jpeg"/>
+        </div>
+        <h3>Get your Diploma</h3>
+        <p>It's not the end, but a new beginning</p>
+
+        
+
+<div id="rsvp">
+    <h2>RSVP</h2>
+    <div class="rsvp-container">
+        <div class="rsvp-para">
+           <p>Celebrate this success together. RSVP soon!!</p>
+        </div>
+        <div class="rsvp-participants">
+            <p>🎟️ RSVP for the graduation.</p>
+            <p>🎟️ RSVP for additional details.</p>
+            <p>🎟️ RSVP to see the achievements of our young minds.</p>
+        </div>
+    </div>
+
+    <!--- Sign RSVP Form --->
+    <div class="form-container">
+        <form id="rsvp-form" title="rsvp-form">
+            <label for = "name" > Name:</label>
+            <input type = "text" id = "name" >
+            <label for="hometown">Hometown:</label>
+            <input type="text" id="hometown">
+            <label for = "email" > Email:</label>
+            <input type = "text" id = "email" >
+            <button type="submit" id="rsvp-submit">Submit RSVP</button>
+
+        </form>
+    </div>      
+</div>
+
+
+<div id="thanks-modal" class="modal">
+    <div class="modal-container">
+        <p id="thanks-content-modal"></p>
+        <img id="modal-image" src="codepath image .jpeg" />
+    </div>
+</div>
+<h3>Attendees</h3>
+<ul id="participant-list"></ul>
+
+
+        <script src="index.js"></script>
+    </body>
+</html>
