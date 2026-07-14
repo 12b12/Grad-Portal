@@ -1,96 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Graduation Alumni Portal</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <ul>
+
+            <li>
+                <a href="#about">
+                    About
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#graduates">
+                    Graduates
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#stories">
+                    Share Your Story
+                </a>
+            </li>
+
+
+            <li>
+                <button id="theme-button">
+                    Toggle Dark Mode
+                </button>
+            </li>
+
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <section class="header-container">
+
+
         <div>
 
-        <title>Graduates Information</title>
-        </div>
-        <link rel="stylesheet" href="styles.css">
-    </head>
 
-    <body>
-    
+            <h1>
+                🎓 Graduation Alumni Portal
+            </h1>
 
-<div class="navbar">
-    <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#schedule">Event Schedule</a></li>
-    <li><button id="theme-button">Toggle Dark Mode</button></li>
-    </ul>
-</div>
-        
-        <div class="header-container"> 
-        <h1>Graduates Information</h1>
-        <h2>Share Your STORY!!</h2>
-        <div id="header-button">
-        <button type="button">Choose Year</button>
-        <button type="button">Choose School</button>
-        </div>
-        </div>
-        
-        <div id="header-item">
-        <section id="about"></section>
-        <h2>About the Page</h2>
-        <p>Welcome to the <strong> School District’s Graduates & Alumni Portal</strong>! 🎓This site was created to celebrate the achievements of our students and to keep our community connected across generations.</p>
-        <p>Here, families, friends, and future graduates can explore information about each graduating class by <strong>year</strong> and <strong>school</strong>. Discover details such as a student’s name, class rank, academic honors, chosen college, intended major, and a personal “About Me” section that shares their story.</p>
-        <p>We also highlight the journeys of our alumni, showing where they are now and how they continue to make us proud. This platform is more than a record of graduates—it’s a space for inspiration, celebration, and connection across our district.</p>
-        </div>
-       
-        
-        <h2>This year's event schedule</h2>
-        <section id="schedule"></section>
-        <div id="header-item">
-        <img alt="A picture of graduates throwing their caps" src="grad image project.jpeg"/>
-       </div>
-        <h3>Can't wait !! </h3>
-        <p>It's everyone's dream to throw their caps up high on their special day!!!</p>
-        <div id="header-item">
-        <img alt="A simple picture with some books, a grad cap and diploma" src="grad image 2.jpeg"/>
-        </div>
-        <h3>Get your Diploma</h3>
-        <p>It's not the end, but a new beginning</p>
 
-        
+            <h2>
+                Celebrate achievements. Share your journey.
+            </h2>
 
-<div id="rsvp">
-    <h2>RSVP</h2>
-    <div class="rsvp-container">
-        <div class="rsvp-para">
-           <p>Celebrate this success together. RSVP soon!!</p>
-        </div>
-        <div class="rsvp-participants">
-            <p>🎟️ RSVP for the graduation.</p>
-            <p>🎟️ RSVP for additional details.</p>
-            <p>🎟️ RSVP to see the achievements of our young minds.</p>
-        </div>
-    </div>
 
-    <!--- Sign RSVP Form --->
-    <div class="form-container">
-        <form id="rsvp-form" title="rsvp-form">
-            <label for = "name" > Name:</label>
-            <input type = "text" id = "name" >
-            <label for="hometown">Hometown:</label>
-            <input type="text" id="hometown">
-            <label for = "email" > Email:</label>
-            <input type = "text" id = "email" >
-            <button type="submit" id="rsvp-submit">Submit RSVP</button>
+
+            <div id="header-button">
+
+
+                <label for="year">
+                    Graduation Year:
+                </label>
+
+
+                <select id="year">
+
+                    <option value="">
+                        Select Year
+                    </option>
+
+                    <option value="2025">
+                        2025
+                    </option>
+
+                    <option value="2026">
+                        2026
+                    </option>
+
+                    <option value="2027">
+                        2027
+                    </option>
+
+
+                </select>
+
+
+                <label for="school">
+                    School:
+                </label>
+
+
+                <select id="school">
+
+
+                    <option value="">
+                        Select School
+                    </option>
+
+
+                    <option value="Central High School">
+                        Central High School
+                    </option>
+
+
+                    <option value="West High School">
+                        West High School
+                    </option>
+
+
+                </select>
+
+
+                <button id="search-graduates">
+
+                    View Graduates
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-- About -->
+
+    <section id="about">
+
+
+        <h2>
+            About the Portal
+        </h2>
+
+        <p>
+            Welcome to the
+            <strong>Graduation Alumni Portal</strong> 🎓.
+            This platform celebrates students, alumni, and their achievements.
+        </p>
+
+        <p>
+            Explore graduating classes by year and school.
+            Discover graduate stories, academic achievements, colleges, and future goals.
+        </p>
+
+        <p>
+            This website connects generations of students and inspires future graduates through shared experiences.
+        </p>
+
+
+    </section>
+
+    <!-- Graduate Directory -->
+
+
+    <section id="graduates">
+
+
+        <h2>
+            Graduate Directory
+        </h2>
+
+
+        <div id="graduate-container">
+
+
+            <p>
+                Choose a year and school to discover graduates.
+            </p>
+
+
+        </div>
+
+
+
+    </section>
+
+
+    <!-- Alumni Spotlight -->
+
+
+    <section id="spotlight">
+
+
+        <h2>
+            ⭐ Alumni Spotlight
+        </h2>
+
+
+
+        <div class="alumni-card">
+
+
+            <h3>
+                Aisha Patel
+            </h3>
+
+
+            <p>
+                Class of 2025
+            </p>
+
+
+            <p>
+                Computer Science Student at UT Austin
+            </p>
+
+
+            <p>
+                "Keep learning, keep building, and follow your passion."
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+    <!-- Share Your Story -->
+
+
+    <section id="stories">
+
+
+        <h2>
+            Share Your Graduation Story 🎓
+        </h2>
+
+
+
+        <p>
+            Tell future graduates about your journey.
+        </p>
+
+
+
+        <form id="story-form">
+
+
+            <label for="story-name">
+                Name:
+            </label>
+
+
+            <input type="text" id="story-name">
+
+
+
+            <label for="story-year">
+                Graduation Year:
+            </label>
+
+
+            <input type="number" id="story-year">
+
+
+
+            <label for="story-school">
+                School:
+            </label>
+
+
+            <input type="text" id="story-school">
+
+
+
+            <label for="college">
+                College:
+            </label>
+
+
+            <input type="text" id="college">
+
+
+
+            <label for="major">
+                Major:
+            </label>
+
+
+            <input type="text" id="major">
+
+
+
+            <label for="story">
+                About Me:
+            </label>
+
+
+            <textarea id="story">
+</textarea>
+
+
+
+            <button type="submit">
+
+                Submit Story
+
+            </button>
+
 
         </form>
-    </div>      
-</div>
 
 
-<div id="thanks-modal" class="modal">
-    <div class="modal-container">
-        <p id="thanks-content-modal"></p>
-        <img id="modal-image" src="codepath image .jpeg" />
-    </div>
-</div>
-<h3>Attendees</h3>
-<ul id="participant-list"></ul>
+    </section>
 
 
-        <script src="index.js"></script>
-    </body>
+    <!-- Graduation Event -->
+
+
+    <section id="schedule">
+
+
+        <h2>
+            Graduation Events
+        </h2>
+
+
+        <ul>
+
+            <li>
+                🎓 Graduation Ceremony - 10:00 AM
+            </li>
+
+
+            <li>
+                📸 Senior Photo Session - 12:00 PM
+            </li>
+
+
+            <li>
+                🎉 Alumni Celebration - 2:00 PM
+            </li>
+
+
+        </ul>
+
+
+    </section>
+
+
+    <!-- Images -->
+
+
+    <section class="images">
+
+
+        <img src="grad image project.jpeg" alt="Graduates celebrating" />
+
+
+
+        <h3>
+            A New Beginning
+        </h3>
+
+
+        <p>
+            Graduation is not the end. It is the start of a new journey.
+        </p>
+
+
+
+        <img src="grad image 2.jpeg" alt="Graduation diploma" />
+
+
+    </section>
+
+
+    <script src="index.js"></script>
+
+
+</body>
+
 </html>

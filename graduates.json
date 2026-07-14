@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Aisha Patel",
+        "year": "2025",
+        "school": "Central High School",
+        "rank": "1",
+        "college": "University of Texas at Austin",
+        "major": "Computer Science",
+        "honors": "Valedictorian",
+        "bio": "Passionate about artificial intelligence and building technology that helps people."
+    },
+    {
+        "name": "Daniel Kim",
+        "year": "2025",
+        "school": "Central High School",
+        "rank": "10",
+        "college": "Texas A&M University",
+        "major": "Engineering",
+        "honors": "Robotics Club President",
+        "bio": "Interested in robotics, innovation, and creating solutions for communities."
+    },
+    {
+        "name": "Maria Lopez",
+        "year": "2026",
+        "school": "West High School",
+        "rank": "5",
+        "college": "Stanford University",
+        "major": "Biology",
+        "honors": "Science Fair Winner",
+        "bio": "Future medical researcher passionate about improving healthcare."
+    },
+    {
+        "name": "James Wilson",
+        "year": "2026",
+        "school": "West High School",
+        "rank": "12",
+        "college": "Rice University",
+        "major": "Computer Science",
+        "honors": "Coding Competition Winner",
+        "bio": "Enjoys software development and solving challenging problems."
+    }
+]
